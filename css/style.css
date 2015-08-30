@@ -1,4 +1,7 @@
 /*CUSTOM CSS*/
+#wrap{
+	padding:0px;
+}
 
 .homeHero{
 	background-image: url('../images/ks_hero1.jpg');
@@ -7,10 +10,55 @@
 	background-position: center center;
 	background-size:cover;
 	height: 600px;
+
+
 }
 
-.container-fluid{
-	border:solid 1px red;
-	padding:0px;
+#logo{
+	max-width: 300px;
+	position:fixed;
+	left:40px;
+	top: 20px;
 }
 
+#navbarHome{
+	position:fixed;
+	z-index: 100;
+	top:100px;
+	/*NAV SPAN BACKGROUND AND BORDER REMOVAL*/
+	background-color:rgba(0,0,0,0);
+	border:solid 0px;
+}
+
+nav {
+}
+
+nav ul li{
+	list-style: none;
+	font-family: arial black;
+	font-size: 100pt;
+	line-height: 90pt;
+	letter-spacing:-15pt;
+}
+
+
+a:hover{
+	text-decoration:none;
+	color:white;
+}
+
+
+.colorSpan:hover{
+	background-color:rgba(245, 195, 0, .3);
+	display: inline-block;
+	padding-right:30px;
+	padding-left:20px;
+	padding-bottom:10px;
+}
+
+/*.col-md-12{
+	border: solid 1px red;
+	height: 100px;
+	position:fixed;
+	z-index: 100;
+}*/
