@@ -1,36 +1,26 @@
 /*CUSTOM CSS*/
+
 #wrap{
-	padding:0px;
+	width: 100%;
 }
 
-.homeHero{
-	background-image: url('../images/ks_hero1.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-position: center center;
-	background-size:cover;
-	height: 600px;
-
-
-}
 
 #logo{
 	max-width: 300px;
-	position:fixed;
+	position:relative;
 	left:40px;
 	top: 20px;
+	z-index: 100;
 }
 
+
+/*Home nav START*/
 #navbarHome{
-	position:fixed;
+	position:relative;
 	z-index: 100;
 	top:100px;
-	/*NAV SPAN BACKGROUND AND BORDER REMOVAL*/
-	background-color:rgba(0,0,0,0);
-	border:solid 0px;
-}
+	left:0px;
 
-nav {
 }
 
 nav ul li{
@@ -39,26 +29,118 @@ nav ul li{
 	font-size: 100pt;
 	line-height: 90pt;
 	letter-spacing:-15pt;
+	margin: 0;
 }
 
-
-a:hover{
+nav a:hover{
 	text-decoration:none;
-	color:white;
+	color:gold;
 }
-
 
 .colorSpan:hover{
 	background-color:rgba(245, 195, 0, .3);
 	display: inline-block;
 	padding-right:30px;
 	padding-left:20px;
-	padding-bottom:10px;
+	padding-bottom:0px;
+	padding-top:-5px;
 }
 
-/*.col-md-12{
-	border: solid 1px red;
-	height: 100px;
-	position:fixed;
-	z-index: 100;
-}*/
+/*Home nav END*/
+
+.homeHero{
+	background-image: url('../images/ks_hero1.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height: 700px;
+	position: absolute;
+	width:100%;
+	z-index: -100;
+	
+	top: 0px;
+	left: 0px;
+	
+
+}
+
+
+.subscribe{
+	height:500px;
+	background-color: rgba(42, 42, 42, 1);
+	width:100%;
+	position:relative;
+	top:150px;	
+
+}
+
+footer{
+	height:400px;
+	background-color:black;
+	color:white;
+	font-family: asap, sans-serif;
+	position:relative;
+	top:100px;
+}
+
+.footer{
+	text-align: center;
+	position: relative;
+	top:350px;
+}
+
+address{
+	margin-left:50px;
+	margin-top:50px;
+	color: white;
+	display:inline-block;
+	float:left;
+	clear:both;
+}
+
+address a:hover {
+  color: white;
+  text-decoration:none;
+}
+
+address a{
+	color:gold;
+}
+
+.line{
+	height:2px;
+	background-color:white;
+	width:95%;
+	margin:0 auto;
+	
+	position:relative;
+	z-index:100px;
+}
+
+.social{
+	float:left;
+	position:relative;
+	top:200px;
+	margin:-150px;
+	left:90%;
+	text-align:right;
+}
+
+.facebook{
+	margin-right:10px;
+	display:inline-block;
+}
+
+.footerLogo{
+	position: relative;
+	left:48%;
+	display:inline-block;
+}
+
+
+.clearfix{
+	clear:gold;
+}
+
+
