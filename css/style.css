@@ -1,1 +1,16 @@
 /*CUSTOM CSS*/
+
+.homeHero{
+	background-image: url('../images/ks_hero1.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height: 600px;
+}
+
+.container-fluid{
+	border:solid 1px red;
+	padding:0px;
+}
+
