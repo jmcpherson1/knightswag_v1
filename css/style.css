@@ -1,7 +1,11 @@
 /*CUSTOM CSS*/
+.clearfix{
+	clear:gold;
+}
 
 #wrap{
 	width: 100%;
+	font-family: Asap, sans-serif;
 }
 
 
@@ -65,7 +69,6 @@ nav a:hover{
 
 }
 
-
 .subscribe{
 	height:500px;
 	background-color: rgba(42, 42, 42, 1);
@@ -74,6 +77,46 @@ nav a:hover{
 	top:150px;	
 
 }
+
+.headline1{
+	text-align:center;
+	font-size:90px;
+	color:white;
+	top:50px;
+	position:relative;
+	line-height:70pt;
+}
+
+.form{
+	display:inline-block;
+	float:left;
+	position:relative;
+	left:15%;
+	top:100px;
+}
+
+.emailInput{
+	height: 50px;
+	width: 555px;
+	border-radius:5px;
+	margin-right:20px;
+}
+
+.btn-default{
+	font-family:asap-bold, arial-bold;
+	height: 50px;
+	width:270px;
+	letter-spacing:1pt;
+	background-color:gold;
+	border: none;
+}
+
+.btn-default:hover{
+	background-color:goldenrod;
+}
+
+
+/*FOOTER START*/
 
 footer{
 	height:400px;
@@ -138,9 +181,22 @@ address a{
 	display:inline-block;
 }
 
+/*FOOTER END*/
 
-.clearfix{
-	clear:gold;
+/*/////////ABOUT///////*/
+
+.aboutHero{
+	background-image: url('../images/ks_hero2.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height: 441px;
+	position: relative;
+	
+	top: 70px;
+	left: 0px;
+	
+
 }
-
 
