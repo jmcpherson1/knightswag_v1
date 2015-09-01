@@ -65,25 +65,22 @@ nav a:hover{
 	
 	top: 0px;
 	left: 0px;
-	
+}
+
+#nav{
+	height:640px;
+	margin-top:0px;
 
 }
 
-.subscribe{
+#subscribe{
 	height:500px;
 	background-color: rgba(42, 42, 42, 1);
-	width:100%;
-	position:relative;
-	top:150px;	
-
 }
 
-.headline1{
-	text-align:center;
+#headline1{
 	font-size:90px;
 	color:white;
-	top:50px;
-	position:relative;
 	line-height:70pt;
 }
 
@@ -119,15 +116,34 @@ nav a:hover{
 /*FOOTER START*/
 
 footer{
-	height:400px;
+	height:450px;
 	background-color:black;
 	color:white;
 	font-family: asap, sans-serif;
-	position:relative;
 	top:100px;
 }
 
-.footer{
+.facebook{
+	margin-right:10px;
+	margin-left:70px;
+	display:inline-block;
+}
+
+#line{
+	height:2px;
+	background-color:white;
+
+}
+
+.footerContact{
+	height:230px;
+}
+
+.footerLogo{
+	margin-top: 30px;
+}
+
+/*.footer{
 	text-align: center;
 	position: relative;
 	top:350px;
@@ -161,7 +177,7 @@ address a{
 	z-index:100px;
 }
 
-.social{
+#social{
 	float:left;
 	position:relative;
 	top:200px;
@@ -179,11 +195,19 @@ address a{
 	position: relative;
 	left:48%;
 	display:inline-block;
-}
+}*/
 
 /*FOOTER END*/
 
+
+
+
 /*/////////ABOUT///////*/
+.aboutWrap{
+	width: 100%;
+	font-family: Asap, sans-serif;
+
+}
 
 .aboutHero{
 	background-image: url('../images/ks_hero2.jpg');
@@ -196,7 +220,9 @@ address a{
 	
 	top: 70px;
 	left: 0px;
-	
-
 }
 
+.aboutSection1{
+	height: 400px;
+	border:solid 1px black;
+}
