@@ -1,7 +1,4 @@
 /*CUSTOM CSS*/
-.clearfix{
-	clear:gold;
-}
 
 #wrap{
 	width: 100%;
@@ -10,122 +7,59 @@
 
 
 #logo{
-	max-width: 300px;
-	position:relative;
-	left:40px;
-	top: 20px;
-	z-index: 100;
+	max-width: 200px;
+}
+
+/*Nav START*/
+.clearfix{
+	clear:both;
+}
+
+.navbar-default{
+	border:none;
+	margin-bottom:0px;
+	padding-bottom: 0px
+}
+
+.navBar{  /*container-fluid*/
+	background-color: black;
+}
+
+.navbar-nav{
+	font-family: Asap, sans-serif;
 }
 
 
-/*Home nav START*/
-#navbarHome{
-	position:relative;
-	z-index: 100;
-	top:100px;
-	left:0px;
-
+.navbar-default .navbar-nav>li>a{
+	color: white;
 }
 
-nav ul li{
-	list-style: none;
-	font-family: arial black;
-	font-size: 100pt;
-	line-height: 90pt;
-	letter-spacing:-15pt;
-	margin: 0;
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: gold;
 }
 
-nav a:hover{
-	text-decoration:none;
-	color:gold;
-}
-
-.colorSpan:hover{
-	background-color:rgba(245, 195, 0, .3);
-	display: inline-block;
-	padding-right:30px;
-	padding-left:20px;
-	padding-bottom:0px;
-	padding-top:-5px;
-}
-
-/*Home nav END*/
-
-.homeHero{
-	background-image: url('../images/ks_hero1.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-position: center center;
-	background-size:cover;
-	height: 700px;
-	position: absolute;
-	width:100%;
-	z-index: -100;
-	
-	top: 0px;
-	left: 0px;
-}
-
-#nav{
-	height:640px;
-	margin-top:0px;
-
-}
-
-#subscribe{
-	height:500px;
-	background-color: rgba(42, 42, 42, 1);
-}
-
-#headline1{
-	font-size:90px;
-	color:white;
-	line-height:70pt;
-}
-
-.form{
-	display:inline-block;
-	float:left;
-	position:relative;
-	left:15%;
-	top:100px;
-}
-
-.emailInput{
-	height: 50px;
-	width: 555px;
-	border-radius:5px;
-	margin-right:20px;
-}
-
-.btn-default{
-	font-family:asap-bold, arial-bold;
-	height: 50px;
-	width:270px;
-	letter-spacing:1pt;
-	background-color:gold;
-	border: none;
-}
-
-.btn-default:hover{
-	background-color:goldenrod;
-}
-
+/*Nav END*/
 
 /*FOOTER START*/
 
 footer{
-	height:450px;
 	background-color:black;
 	color:white;
-	font-family: asap, sans-serif;
-	top:100px;
+	font-family: sans-serif;
+
+	position: relative;
+	top: 0px;
+	padding-top: 30px;
 }
 
+footer address{
+	font-size: 10pt;
+}
+
+
 .facebook{
-	margin-right:10px;
-	margin-left:70px;
+	margin-right:5px;
+	margin-left:5px;
 	display:inline-block;
 }
 
@@ -135,69 +69,86 @@ footer{
 
 }
 
-.footerContact{
-	height:230px;
-}
-
 .footerLogo{
 	margin-top: 30px;
 }
 
-/*.footer{
-	text-align: center;
-	position: relative;
-	top:350px;
-}
-
-address{
-	margin-left:50px;
-	margin-top:50px;
-	color: white;
-	display:inline-block;
-	float:left;
-	clear:both;
-}
-
-address a:hover {
-  color: white;
-  text-decoration:none;
-}
-
-address a{
-	color:gold;
-}
-
-.line{
-	height:2px;
-	background-color:white;
-	width:95%;
-	margin:0 auto;
-	
-	position:relative;
-	z-index:100px;
-}
-
-#social{
-	float:left;
-	position:relative;
-	top:200px;
-	margin:-150px;
-	left:90%;
-	text-align:right;
-}
-
-.facebook{
-	margin-right:10px;
-	display:inline-block;
-}
-
-.footerLogo{
-	position: relative;
-	left:48%;
-	display:inline-block;
-}*/
-
 /*FOOTER END*/
+
+
+
+
+
+
+/*/////////HOME END/////////*/
+
+.homeHero{
+	background-image: url('../images/ks_hero1.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height: 700px;
+	position: relative;
+    top: 15px;
+    left: 0px;
+}
+
+#nav{
+	height:640px;
+	margin-top:0px;
+
+}
+
+.subscribe{
+	background-color: rgba(42, 42, 42, 1);
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 125px;
+	padding-bottom: 175px;
+}
+
+.form{
+	position: relative;
+	width: 700px;
+}
+
+.emailInput{
+	height: 50px;
+	width: 300px;
+	border-radius:5px;
+}
+
+#homeBtn {
+	font-family:asap-bold, arial-bold;
+	height: 50px;
+	width:270px;
+	letter-spacing:1pt;
+	background-color:gold;
+	border: none;
+}
+
+#homeBtn:hover{
+	background-color:goldenrod;
+}
+
+#headlineHome{ 
+    font-size: 50pt;
+    font-family: asap-bold;
+    color:white;
+}
+
+@media(max-width:768px){
+    #headlineHome{
+        font-size: 25pt;
+        line-height: 35pt;
+    }
+}
+
+/*/////////HOME END/////////*/
+
+
 
 
 
@@ -209,20 +160,167 @@ address a{
 
 }
 
-.aboutHero{
-	background-image: url('../images/ks_hero2.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-position: center center;
-	background-size:cover;
-	height: 441px;
-	position: relative;
-	
-	top: 70px;
-	left: 0px;
+.aboutHero {
+    background-image: url('../images/ks_hero2.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 441px;
+    position: relative;
+    top: 50px;
+    left: 0px;
 }
 
-.aboutSection1{
-	height: 400px;
-	border:solid 1px black;
+.aboutSection { /*NO HEIGHT WILL ALLOW SECTION TO BE FULLY RESPONSIVE*/
+    position: relative;
+    top: 50px;
+    background-color: #eee;
+    padding:50px;
+}
+
+.aboutBlock{ 
+    font-size: 22pt;
+    font-family: asap-bold;
+}
+
+@media(max-width:768px){
+    .aboutBlock{
+        font-size: 16pt;
+        line-height: 25pt; 
+    }
+}
+
+/*//////////ABOUT END//////////*/
+
+
+/*//////////STORE START////////////*/
+.storeSection {
+    position: relative;
+    top: 50px;
+    background-color: #eee;
+    padding:50px;
+}
+
+.thumb{
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.shirtDesc section{
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+	.shirtDesc{
+		position:relative;
+		padding-top:125px;
+}
+
+/*//////////STORE START////////////*/
+
+
+
+/*//////////CONTACT US START//////////*/
+.contactForm{
+	position: relative;
+	background-color: red;
+	top:50px;
+
+}
+
+.main{
+	position: relative;
+    top: 50px;
+    padding:50px;
+    background-color: #eee;
+}
+
+.form-main{
+	margin:50px;
+	display:block;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 380px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -260px;
+  	-moz-border-radius: 7px;
+  	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+#button-blue{
+	float:left;
+	width: 100%;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+
+
+@media (max-width: 767px) {
+	.main{
+		padding-top: 100px;
+		position: relative;
+    	top: 175px;
+    	padding:50px;
+		
+	}
 }
