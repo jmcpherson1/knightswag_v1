@@ -134,16 +134,25 @@ footer address{
 }
 
 #headlineHome{ 
-    font-size: 50pt;
+    font-size: 75pt;
     font-family: asap-bold;
     color:white;
 }
 
 @media(max-width:768px){
     #headlineHome{
-        font-size: 25pt;
-        line-height: 35pt;
+        font-size: 30pt;
+        line-height: 40pt;
     }
+
+    .subscribe{
+		background-color: rgba(42, 42, 42, 1);
+		position: relative;
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
 }
 
 /*/////////HOME END/////////*/
@@ -218,17 +227,17 @@ footer address{
 		padding-top:125px;
 }
 
-/*//////////STORE START////////////*/
+/*//////////STORE END////////////*/
 
 
 
 /*//////////CONTACT US START//////////*/
-.contactForm{
+/*.contactForm{
 	position: relative;
 	background-color: red;
 	top:50px;
 
-}
+}*/
 
 .main{
 	position: relative;
@@ -324,3 +333,5 @@ textarea {
 		
 	}
 }
+
+/*//////////CONTACT US END//////////*/
