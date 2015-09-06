@@ -1,4 +1,4 @@
-/*CUSTOM CSS*/
+/*GLOBAL SETTINGS*/
 
 #wrap{
 	width: 100%;
@@ -10,7 +10,7 @@
 	max-width: 200px;
 }
 
-/*Nav START*/
+/*NAV START*/
 .clearfix{
 	clear:both;
 }
@@ -38,7 +38,7 @@
 	background-color: gold;
 }
 
-/*Nav END*/
+/*NAV END*/
 
 /*FOOTER START*/
 
@@ -203,6 +203,12 @@ footer address{
 /*//////////ABOUT END//////////*/
 
 
+
+
+
+
+
+
 /*//////////STORE START////////////*/
 .storeSection {
     position: relative;
@@ -231,13 +237,14 @@ footer address{
 
 
 
-/*//////////CONTACT US START//////////*/
-/*.contactForm{
-	position: relative;
-	background-color: red;
-	top:50px;
 
-}*/
+
+
+
+
+
+/*//////////CONTACT US START//////////*/
+
 
 .main{
 	position: relative;

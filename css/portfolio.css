@@ -1,0 +1,281 @@
+/*Global Settings*/
+#clear-a{
+	text-decoration: none;
+}
+
+body{
+	font-family: Helvetica, sans-serif;
+}
+
+/*Box 1*/
+#box1{
+	background-image: url('../images/jp-jump.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:600px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay1{  
+	background-image: url('../images/black.jpg');
+	height:600px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:200px;
+  	text-align: center;
+}
+
+#box1:hover #overlay1{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption1{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:96px;
+}
+
+#box1:hover #caption1{
+    opacity:1;
+}
+
+#subcaption1{
+	font-size:35pt;
+	color:rgba(255,255,255,1);
+	font-weight:700;
+}
+
+#box1:hover #subcaption1{
+    opacity:1;
+}
+
+/*Mobile Media Query*/
+
+@media(max-width:768px){
+
+
+#caption1{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:70px;
+    line-height: 60pt;
+}
+
+#subcaption1{
+	font-size:20pt;
+	color:rgba(255,255,255,1);
+	font-weight:600;
+	line-height: 30pt;
+}}
+
+/*Box 1 END*/
+
+
+/*Box 2*/
+#box2{
+	background-image: url('../images/100days-butts.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:300px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay2{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:75px;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+#box2:hover #overlay2{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption2{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:50px;
+}
+
+#box2:hover #caption2{
+    opacity:1;
+}
+/*Box 2 END*/
+
+/*Box 3*/
+#box3{
+	background-image: url('../images/ksthumb.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:300px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay3{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:75px;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+#box3:hover #overlay3{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption3{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:50px;
+}
+
+#box3:hover #caption2{
+    opacity:1;
+}
+/*Box 3 END*/
+
+/*Box 4*/
+#box4{
+	background-image: url('../images/nycda-portfolio.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-size:cover;
+	background-position: center center;
+	height:300px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay4{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:75px;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+#box4:hover #overlay4{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption4{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size: 50px;
+}
+
+#box4:hover #caption4{
+    opacity:1;
+}
+
+/*Box 4 END*/
+
+/*Box 5*/
+#box5{
+	background-image: url('../images/spikeapp.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:300px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay5{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:75px;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+#box5:hover #overlay5{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption5{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:50px;
+}
+
+#box5:hover #caption5{
+    opacity:1;
+}
+/*Box 5 END*/
+
+/*Box 6*/
+#box6{
+	background-image: url('../images/imconcept2.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:300px;
+	padding-left: 0px;
+  	padding-right:0px;
+}
+
+#overlay6{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	padding-top:75px; /*Text position in div*/
+  	text-align: center;
+  	overflow: hidden;
+}
+
+#box6:hover #overlay6{
+    opacity:.7;
+    cursor: pointer;
+}
+
+#caption6{  
+    font-weight:900;
+    color:rgba(255,255,255,1);
+    font-size:50px;
+}
+
+#box6:hover #caption6{
+    opacity:1;
+}
+/*Box 6 END*/
+
+
