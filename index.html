@@ -19,7 +19,8 @@
 
 <body>
 	<div id="wrap">
-		
+
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  	<div class="container-fluid navBar">
 
@@ -35,32 +36,52 @@
 			</div> <!--container-fluid navBar-->
 		</nav> <!--navbar-default END-->
 
-
-		<div class="container-fluid">
+		<div class="container-fluid" >
 			<div class="row">
-				<div class="homeHero" class="img-responsive"></div>
+				<div class="col-md-13">
+					<div id="locations" class="carousel slide" data-ride="carousel">
+							
+						<ol class="carousel-indicators">
+							<li data-target="#locations" data-slide-to="0" class="active"></li>
+							<li data-target="#locations" data-slide-to="1"></li>
+							<li data-target="#locations" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="images/kshero1.jpg" alt="KnightSwag" id="homeHero">
+							</div>
+
+							<div class="item">
+								<img src="images/kshero2.jpg" alt="KnightSwag" id="homeHero">
+							</div>
+
+							<div class="item">
+								<img src="images/kshero3.jpg" alt="KnightSwag" id="homeHero">
+							</div>
+						</div> <!--carousel-inner-->
+
+					</div> <!--locations-->
+				</div> <!--col-md-12-->
 			</div> <!--row-->
-		</div> <!--container-fluid-->
-
-		<div class="row">
-			<div class="col-md-10">
-				<div id="locations">
-					<img src="images/1.jpg" alt="">
-					<img src="images/2.jpg" alt="">
-					<img src="images/3.jpg" alt="">
-					<img src="images/4.jpg" alt="">
-					<img src="images/5.jpg" alt="">
-					<img src="images/6.jpg" alt="">
-					<img src="images/7.jpg" alt="">
-					<img src="images/8.jpg" alt="">
-			</div> 
-		</div> <!--row-->
-
+		</div> <!--container-fluid carousel end-->
 		
 							
-			<div class="container-fluid subscribe">
-						<p class="text-center" id="headlineHome">KNIGHTSWAG IS BACK!</p>
-			</div> <!--container-fluid subscribe-->
+		<div class="container-fluid subscribe">
+			<p class="text-center" id="headlineHome">KNIGHTSWAG IS BACK!</p>
+
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="sizing-addon1">@</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+			</div> <!--input-->
+
+			<div class="btn-group">
+  				<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    			Large button <span class="caret"></span>
+  				</button>	
+			</div> <!--btn-->
+
+		</div> <!--container-fluid subscribe-->
 			
 		
 		<footer>

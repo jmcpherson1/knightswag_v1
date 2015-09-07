@@ -92,25 +92,12 @@ footer address{
 
 
 
-/*/////////HOME END/////////*/
-
-.homeHero{
-	background-image: url('../images/kshero1.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-position: center center;
-	background-size:cover;
-	height: 700px;
-	position: relative;
-    top: 0px;
-    left: 0px;
+/*/////////HOME START/////////*/
+#homeHero{
+	width:1400px;
 }
 
-#nav{
-	height:640px;
-	margin-top:0px;
 
-}
 
 .subscribe{
 	background-color: rgba(42, 42, 42, 1);
