@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KnightSwag | Shop</title>
+	<title>KnightSwag</title>
 	<!--Always insert n this order when using BOOTSTRAP-->
 	
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
@@ -18,47 +18,76 @@
 </head>
 
 <body>
-	<div id="shopWrap">
-	
+	<div id="wrap">
+
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  	<div class="container-fluid navBar">
 
 		  		<div class="navbar-header">
-		  			<a class="navbar-brand" href="index.html"><img alt="Brand" src="images/knightswag_logo.jpg" id="logo" /></a>
+		  			<a class="navbar-brand" href="knightswag.html"><img alt="Brand" src="images/kslogostacked.jpg" id="ksLogo" /></a>
 		  		</div> <!--navbar-header-->
 
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right text-center">
 				 	<li role="about" ><a href="about.html" class="clearfix">ABOUT</a></li>
 				  	<li role="shop"><a href="store.html">SHOP</a></li>
-				  	<li role="contact us"><a href="contact.html">CONTACT</a></li>
+				  	<li role="contact us"><a href="#">CONTACT</a></li>
 				</ul> 
 			</div> <!--container-fluid navBar-->
-		</nav> <!--navbar-default-->
+		</nav> <!--navbar-default END-->
 
+		<div class="container-fluid" >
+			<div class="row">
+				<div class="col-md-13">
+					<div id="locations" class="carousel slide" data-ride="carousel">
+							
+						<ol class="carousel-indicators">
+							<li data-target="#locations" data-slide-to="0" class="active"></li>
+							<li data-target="#locations" data-slide-to="1"></li>
+							<li data-target="#locations" data-slide-to="2"></li>
+						</ol>
 
-		<div class="container-fluid storeSection">
-			<div class="row shirtDesc">
-				<section class="col-md-4">
-					<img class="thumb" src="images/alafaya.jpg" alt="Alafaya"/>
-					<h3>Alafaya is My Hood</h3>
-					<p>Rep your &quot;hood&quot;...or dorm or student housing or apartment complex all located on the one and only, Alafaya Drive.</p>
-				</section>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="images/kshero1.jpg" alt="KnightSwag" id="homeHero"/>
+							</div>
 
-				<section class="col-md-4">
-					<img class="thumb" src="images/freshest.jpg" alt="407"/>
-					<h3>Freshest in the 407</h3>
-					<p>Are you the &quot;freshest&quot; in Orlando? Who are we kidding, you're a Knight!</p>
-				</section> 
+							<div class="item">
+								<img src="images/kshero2.jpg" alt="KnightSwag" id="homeHero"/>
+							</div>
 
-				<section class="col-md-4">
-					<img class="thumb" src="images/stomp.jpg" alt="407"/>
-					<h3>Stomp Clap Woosh</h3>
-					<p>Get your head in the game on gameday.</p>
-				</section>
+							<div class="item">
+								<img src="images/kshero3.jpg" alt="KnightSwag" id="homeHero"/>
+							</div>
+						</div> <!--carousel-inner-->
+
+					</div> <!--locations-->
+				</div> <!--col-md-12-->
 			</div> <!--row-->
-		</div> <!--container-fluid storeSection-->
+		</div> <!--container-fluid carousel end-->
+		
+							
+		<div class="container-fluid subscribe">
+			<p class="text-center" id="headlineHome">KNIGHTSWAG IS BACK!</p>
 
+			<div class="row">
+				<div class="col-md-2 col-sm-12 clearfix"></div> <!--blank-->
+				<div class="col-md-6 col-sm-6">
+					<div class="form-group">
+					    <input class="form-control input-lg" id="inputHome" type="text" placeholder="Email Address">
+				    </div> <!--form-group-->
+				</div> <!--col-md-6-->
 
+				<div class="col-md-2 col-sm-6">
+					<div class="subscribeBtn">
+		  				<button class="btn btn-default btn-lg" id="btnHome" type="button">SUBSCRIBE</button>	
+					</div> <!--btn-->
+				</div> <!--col-md-2-->
+				<div class="col-md-2 col-sm-12 clearfix"></div> <!--blank-->
+			</div><!--row-->
+		</div> <!--container-fluid subscribe-->
+			
+		
 		<footer>
 			<div class="footerContact">
 				<div class="container-fluid">
@@ -90,15 +119,16 @@
 		</footer>
 
 
+		<!--BACKGROUND IMAGE
+		<div class="homeHero"></div>-->
 
-	</div> <!--shopWrap-->
+	</div> <!--///////WRAP//////-->
 
-	<!--MUST BE PLACED AT THE END TO WORK-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--////////////MUST BE PLACED AT THE END TO WORK///////////-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
 
 </body>
-
 </html>

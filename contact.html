@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KnightSwag | Shop</title>
+	<title>KnightSwag | Contact</title>
 	<!--Always insert n this order when using BOOTSTRAP-->
 	
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-	<div id="shopWrap">
 	
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  	<div class="container-fluid navBar">
@@ -36,44 +35,59 @@
 		</nav> <!--navbar-default-->
 
 
-		<div class="container-fluid storeSection">
-			<div class="row shirtDesc">
-				<section class="col-md-4">
-					<img class="thumb" src="images/alafaya.jpg" alt="Alafaya"/>
-					<h3>Alafaya is My Hood</h3>
-					<p>Rep your &quot;hood&quot;...or dorm or student housing or apartment complex all located on the one and only, Alafaya Drive.</p>
-				</section>
+		
+		<div class="container-fluid main">
+		 	<div class="form-main">
+			    <form>
+		      		<div class="form-group has-feedback">
+						<input type="text" class="form-control" placeholder="Name" />
+						<span class="form-control-feedback glyphicon glyphicon-user" aria-hidden="true"></span>
+  					</div>
 
-				<section class="col-md-4">
-					<img class="thumb" src="images/freshest.jpg" alt="407"/>
-					<h3>Freshest in the 407</h3>
-					<p>Are you the &quot;freshest&quot; in Orlando? Who are we kidding, you're a Knight!</p>
-				</section> 
+  					<div class="form-group has-feedback">
+						<input type="text" class="form-control" placeholder="Email" />
+						<span class="form-control-feedback glyphicon glyphicon-envelope" aria-hidden="true"></span>
+  					</div>
 
-				<section class="col-md-4">
-					<img class="thumb" src="images/stomp.jpg" alt="407"/>
-					<h3>Stomp Clap Woosh</h3>
-					<p>Get your head in the game on gameday.</p>
-				</section>
-			</div> <!--row-->
-		</div> <!--container-fluid storeSection-->
+  					<div class="form-group has-feedback">
+						<textarea class="form-control" rows="3"></textarea>
+						<span class="form-control-feedback glyphicon glyphicon-pencil" aria-hidden="true"></span>
+  					</div>
 
+			      	<div class="submit">
+			        	<input type="submit" value="SEND" id="button-blue"/>
+			    	</div> <!--submit-->
+			    </form> <!--form-->
+
+			</div> <!--form-main-->
+		</div> <!--container fluid end-->    
+		
 
 		<footer>
 			<div class="footerContact">
 				<div class="container-fluid">
 				
 					<div class="row">
-
-						<div class="col-md-12" id="social">
+						<div class="col-md-3">
+							<address>
+								<strong>Contact Us:</strong><br>
+						  		KnightSwag, LLC.<br>
+						  		Orlando, Florida<br>
+						  		<abbr title="Phone">P:</abbr> (123) 456-7890 <br>
+							</address>
+							<address>
+								<strong>Email:</strong><br>
+								<a href="mailto:#">sup@knightswag.com</a>	
+							</address>
+							
+						</div> <!--row-->
+						<div class="col-md-3" class="blank"></div> <!--blank-->
+						<div class="col-md-3" class="blank"></div> <!--blank-->
+						<div class="col-md-3" id="social">
+								<p class="text-nowrap"><strong>Connect With Us!</strong></p>
 								<a href="http://facebook.com"><img src="images/facebook.png" class="facebook"/></a>
 								<a href="http://instagram.com"><img src="images/instagram.png" class="instagram"/></a>
 						<div> <!--social-->
-
-						<div class="col-md-12">
-							<p class="text-nowrap footer"><strong>Contact Us:</strong><br>KnightSwag, LLC. | Orlando, Florida | <abbr title="Phone">P:</abbr> (123) 456-7890 <strong><br>Email:</strong><a href="mailto:#"> sup@knightswag.com</a></p>	
-						</div> <!--column-->						
-						
 					</div> <!--row-->
 				</div> <!--container-->
 			</div> <!--footerContact-->
@@ -84,14 +98,13 @@
 						<div class="footerLogo"><a href="index.html"><img src="images/ks_footer.jpg" class="center-block"/></a></div>
 					</div>
 					<div class="col-sm-12" id="line"></div>
-					<div class="col-md-12"><p class="text-center">Copyright &copy 2015 www.knightswag.com</p></div> 
+					<div class="col-md-12"><p class="text-center">Copyrigh&copy 2015 www.knightswag.com</p></div> 
 				</div> <!--row-->	
 			</div> <!--container-->	
 		</footer>
 
 
 
-	</div> <!--shopWrap-->
 
 	<!--MUST BE PLACED AT THE END TO WORK-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

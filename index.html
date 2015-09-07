@@ -1,139 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KnightSwag</title>
-	<!--Always insert n this order when using BOOTSTRAP-->
-	
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
-	<!--<link rel="stylesheet" href="css/normalize.css"/>-->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
-	
-	<link rel="stylesheet" href="css/style.css" />
+	<title>Jamasa McPherson | Art Director. Designer. Occasional Coder. </title>	
 
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/portfolio.css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
 </head>
 
 <body>
-	<div id="wrap">
+	<div class="container-fluid wrap">
 
+		<div class="row">
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  	<div class="container-fluid navBar">
+			<div class="socialBar">
+				<a href="https://dribbble.com/theecreativedir"><img class="dribbble" src="images/dribbble.png"/></a>
+				<a href="https://www.linkedin.com/in/jamasa"><img class="linkedin" src="images/linkedin.png"/></a>
 
-		  		<div class="navbar-header">
-		  			<a class="navbar-brand" href="index.html"><img alt="Brand" src="images/kslogostacked.jpg" id="ksLogo" /></a>
-		  		</div> <!--navbar-header-->
+				<a href="images/mcpherson_resume_0721.pdf" target="_blank" ><button type="submit" class="btn btn-default resumeBtn">Download Resume</button></a>
+			</div> <!--socialBar-->
 
-				<ul class="nav navbar-nav navbar-right text-center">
-				 	<li role="about" ><a href="about.html" class="clearfix">ABOUT</a></li>
-				  	<li role="shop"><a href="store.html">SHOP</a></li>
-				  	<li role="contact us"><a href="#">CONTACT</a></li>
-				</ul> 
-			</div> <!--container-fluid navBar-->
-		</nav> <!--navbar-default END-->
+			<div class="col-md-8" id="box1">
+			  	<div id="overlay1">
+			    	<span id="caption1">Hi, I'm Jamasa.</span><br>
+			    	<span id="subcaption1">&lt; Art Director. Designer. Occasional Coder. / &gt;</span>
+			  	</div> <!--overlay1-->
 
-		<div class="container-fluid" >
-			<div class="row">
-				<div class="col-md-13">
-					<div id="locations" class="carousel slide" data-ride="carousel">
-							
-						<ol class="carousel-indicators">
-							<li data-target="#locations" data-slide-to="0" class="active"></li>
-							<li data-target="#locations" data-slide-to="1"></li>
-							<li data-target="#locations" data-slide-to="2"></li>
-						</ol>
+			  	<div id="bgBox1">Hi, I'm Jamasa.<br>
+			    	&lt; Art Director. Designer. Occasional Coder / &gt;
+			  	</div> <!--bgBox1-->
+			</div> <!--box1-->
 
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="images/kshero1.jpg" alt="KnightSwag" id="homeHero">
-							</div>
+			<div class="col-md-4" id="box2">
+				<a href="https://instagram.com/explore/tags/100daysofcommutetherapy/" id="clear-a">
+			  		<div id="overlay2"><span id="caption4">The 100 Day Project</span></div></a>
 
-							<div class="item">
-								<img src="images/kshero2.jpg" alt="KnightSwag" id="homeHero">
-							</div>
+			  	<div id="bgBox2">The 100 Day Project</div>
+			</div> <!--box2-->
 
-							<div class="item">
-								<img src="images/kshero3.jpg" alt="KnightSwag" id="homeHero">
-							</div>
-						</div> <!--carousel-inner-->
+			<div class="col-md-4" id="box3">
+				<a href="knightswag.html" id="clear-a">
+			  		<div id="overlay3"><span id="caption4">KnightSwag</span></div></a>
 
-					</div> <!--locations-->
-				</div> <!--col-md-12-->
-			</div> <!--row-->
-		</div> <!--container-fluid carousel end-->
+			  		<div id="bgBox3">KnightSwag</div>
+			</div> <!--box3-->
+		</div> <!--row main-->
+
+		<div class="row">
+			<div class="col-md-4" id="box4">
+			  	<a href="http://nycda.zone/mcpherson596/" id="clear-a">
+			  		<div id="overlay4"><span id="caption4">Code School Portfolio</span></div></a>
+
+			  	<div id="bgBox4">Code School Portfolio</div>
+			</div> <!--box4-->
+
+			<div class="col-md-4" id="box5">
+				<div id="overlay5">
+					<span id="caption5">Digital</span>
+				</div>
+
+				<div id="bgBox5">Digital</div>
+			</div> <!--box5-->
+
+			<div class="col-md-4" id="box6">
+				<div id="overlay6">
+					<span id="caption6">Concepts</span>
+				</div>
+
+				<div id="bgBox6">Concepts</div>
+			</div> <!--box6-->
+		</div> <!--row main-->
 		
-							
-		<div class="container-fluid subscribe">
-			<p class="text-center" id="headlineHome">KNIGHTSWAG IS BACK!</p>
+	</div> <!--container-fluid wrap-->
 
-			<div class="input-group input-group-lg">
-				<span class="input-group-addon" id="sizing-addon1">@</span>
-				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-			</div> <!--input-->
-
-			<div class="btn-group">
-  				<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    			Large button <span class="caret"></span>
-  				</button>	
-			</div> <!--btn-->
-
-		</div> <!--container-fluid subscribe-->
-			
-		
-		<footer>
-			<div class="footerContact">
-				<div class="container-fluid">
-				
-					<div class="row">
-						<div class="col-md-3">
-							<address>
-								<strong>Contact Us:</strong><br>
-						  		KnightSwag, LLC.<br>
-						  		Orlando, Florida<br>
-						  		<abbr title="Phone">P:</abbr> (123) 456-7890 <br>
-							</address>
-							<address>
-								<strong>Email:</strong><br>
-								<a href="mailto:#">sup@knightswag.com</a>	
-							</address>
-						</div> <!--row-->
-						<div class="col-md-3" class="blank"></div> <!--blank-->
-						<div class="col-md-3" class="blank"></div> <!--blank-->
-						<div class="col-md-3" id="social">
-								<p class="text-nowrap"><strong>Connect With Us!</strong></p>
-								<a href="http://facebook.com"><img src="images/facebook.png" class="facebook"/></a>
-								<a href="http://instagram.com"><img src="images/instagram.png" class="instagram"/></a>
-						<div> <!--social-->
-					</div> <!--row-->
-				</div> <!--container-->
-			</div> <!--footerContact-->
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="footerLogo"><a href="index.html"><img src="images/ks_footer.jpg" class="center-block"/></a></div>
-					</div>
-					<div class="col-sm-12" id="line"></div>
-					<div class="col-md-12"><p class="text-center">Copyright &copy 2015 www.knightswag.com</p></div> 
-				</div> <!--row-->	
-			</div> <!--container-->	
-		</footer>
-
-
-		<!--BACKGROUND IMAGE
-		<div class="homeHero"></div>-->
-
-	</div> <!--///////WRAP//////-->
-
-	<!--////////////MUST BE PLACED AT THE END TO WORK///////////-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+	<!--Javascript-->
+	<script src="js/custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 
 </body>
 </html>
