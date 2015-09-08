@@ -1,7 +1,8 @@
 //JAVASCRIPT
+$(document).ready(function(){
 
-
-console.log("JS is working");
-
-
- 
+ $('.carousel').carousel({
+    		interval: 5000,
+    		wrap: true,
+    	});
+});
