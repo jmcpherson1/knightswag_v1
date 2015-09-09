@@ -3,6 +3,8 @@ body{
 	font-family: Helvetica, sans-serif;
 }
 
+
+
 .wrap{
 	margin-top:50px;
 }
@@ -287,6 +289,14 @@ body{
 }
 /*Box 6 END*/
 
+
+
+/* Desktop*/
+@media (min-width:769px) {
+	#bgBox4, #bgBox5, #bgBox6{
+		display:none; /*clears tablet and mobile hover div*/
+	}
+}
 
 /* Mobile Devices*/
 @media only screen and (max-width:768px) {
