@@ -15,6 +15,60 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		.btn, .border-radius{
+			border-radius:0px;
+		}
+
+		.btn-primary{
+			background-color:gold;
+			border:solid 0px;
+			font-family: Helvetica, sans-serif;
+			color: rgb(85, 85, 85);
+			padding-left:38px;
+			padding-right:38px;
+		}
+		
+		/*Model*/
+		
+
+		.input-group {
+		    position: relative;
+		    display: inline-table;
+		    border-collapse: separate;
+		    margin-left: 26%;
+		    width:275px;
+		}
+
+		.input-number{
+			padding:5px;
+		}
+
+		.addtoCart{
+			margin-left: 20px;
+		}
+
+
+		/*Modal box Desktop size*/
+		@media (min-width: 768px){ 
+			.modal-dialog {
+			    width: 500px; /*width of modal box*/
+			    margin: 30px auto;
+			}	
+		}
+
+		/*Mobile size*/
+		@media (max-width: 767px) {
+			.input-group {
+			    position: relative;
+			    display: inline-table;
+			    border-collapse: separate;
+			    margin-left: 12%;
+			    width:275px;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -36,42 +90,51 @@
 		</nav> <!--navbar-default END-->
 
 
-		<div class="container-fluid storeSection">
+
+
+		<div class="container-fluid storeSection"> <!--SHOP ITEMS START-->
 			<div class="row shirts1">
 				<section class="col-md-4 item">
-					<img class="thumb" src="images/numbers.jpg" alt="Alafaya"/>
-					<h4>Numbers Don't Lie</h4>
+					<a href="#numbers" data-toggle="modal">
+					<img class="thumb" src="images/numbers.jpg" alt="UCF Largest School"/></a>
+					<h4>Numbers Don't Lie <span class="label label-primary border-radius">New</span></h4>
 					<p>That's right, we're still the largest school in Florida and now the Nation.</p>
 				</section>
 
 				<section class="col-md-4 item">
-					<img class="thumb" src="images/freshest.jpg" alt="407"/>
+					<a href="#freshest" data-toggle="modal">
+					<img class="thumb" src="images/freshest.jpg" alt="Freshest Shirts"/></a>
 					<h4>Freshest in the 407</h4>
 					<p>Are you the &quot;freshest&quot; in Orlando? Who are we kidding, you're a Knight!</p>
 				</section> 
 
 				<section class="col-md-4 item">
-					<img class="thumb" src="images/stomp.jpg" alt="407"/>
-					<h4>Stomp Clap Woosh</h4>
+					<a href="#stomp" data-toggle="modal">
+					<img class="thumb" src="images/stomp.jpg" alt="Stomp Clap Woosh"/></a>
+					<h4>Stomp Clap Woosh <span class="label label-primary border-radius">New</span></h4>
 					<p>Get your head in the game on gameday.</p>
 				</section>
 			</div> <!--row-->
 
 			<div class="row shirts2">
 				<section class="col-md-4 item">
-					<img class="thumb" src="images/zombie.jpg" alt="Alafaya"/>
+					<a href="#zombie" data-toggle="modal">
+					<img class="thumb" src="images/zombie.jpg" alt="Zombie Nation"/></a>
 					<h4>I Heart Zombie Nation</h4>
 					<p>Zombie Nation. Stand Up!</p>
 				</section>
 
 				<section class="col-md-4 item">
-					<img class="thumb" src="images/ksallday.jpg" alt="407"/>
+					<a href="#ksallday" data-toggle="modal">
+					<img class="thumb" src="images/ksallday.jpg" alt="Knigtswag All Day"/></a>
 					<h4>KNIGHTSWAG All Day</h4>
 					<p>Serving the Freshest shirts in the 407.</p>
 				</section> 
 
 			</div> <!--row-->
 		</div> <!--container-fluid storeSection-->
+
+
 
 
 		<footer>
@@ -103,16 +166,65 @@
 				</div> <!--row-->	
 			</div> <!--container-->	
 		</footer>
-
-
-
 	</div> <!--shopWrap-->
+
+
+		<!-- modal windows START -->
+        <div id="numbers" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3>Numbers Don't Lie <span class="label label-primary border-radius">New</span></h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/numbers.jpg" alt="Numbers" class="img-responsive pull-left">
+                        <h5 class="text-center clearfix">&#36;19.99</h5>
+                        <p class="text-center">That's right, we're still the largest school in Florida and now the Nation.</p>
+                    </div>
+
+
+			        <div class="quantity"> <!--quantity box-->
+					   <div class="input-group">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+				                	<span class="glyphicon glyphicon-minus"></span>
+				                </button>
+				            </span>
+				            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+				                  <span class="glyphicon glyphicon-plus"></span>
+				                </button>
+				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
+				          	</span>
+						
+					    </div>
+					</div> <!--quantity box-->
+
+
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>  <!--modal-header-->
+                </div>  <!--modal-content-->
+            </div>  <!--modal-dialog-->
+        </div> <!--numbers-->
+
+        
+
+        <!-- modal windows END -->
+
+
 
 	<!--MUST BE PLACED AT THE END TO WORK-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+
+	<script src="js/custom.js"></script>
 
 </body>
 
