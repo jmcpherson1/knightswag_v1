@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KnightSwag | Shop</title>
+	<title>KnightSwag</title>
 	<!--Always insert n this order when using BOOTSTRAP-->
 	
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css"/>
@@ -15,6 +15,29 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--favicons -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+	<link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<!--favicons-->
 
 	<style>
 		.btn, .border-radius{
@@ -74,22 +97,29 @@
 <body>
 	<div id="shopWrap">
 	
+		<!--navbar-default START-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  	<div class="container-fluid navBar">
-
 		  		<div class="navbar-header">
+		  			<!--nav mobile collapse button-->
+		  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+		  				<span class="sr-only">Knightswag Mobile Menu</span>
+		  				<span class="icon-bar"></span>
+		  				<span class="icon-bar" style="margin-top: 6px;"></span>
+		  				<span class="icon-bar" style="margin-top: 6px;"></span>
+		  			</button> <!--nav mobile collapse button-->
 		  			<a class="navbar-brand" href="knightswag.html"><img alt="Brand" src="images/kslogostacked.jpg" id="ksLogo" /></a>
 		  		</div> <!--navbar-header-->
-
-				<ul class="nav navbar-nav navbar-right text-center">
-				 	<li role="about" ><a href="about.html" class="clearfix">ABOUT</a></li>
-				  	<li role="shop"><a href="shop.html">SHOP</a></li>
-				  	<li role="contact us"><a href="#">CONTACT</a></li>
-				</ul> 
+				<!--navbar-collapse-->
+				<div class="collapse navbar-collapse" id="collapsemenu">
+					<ul class="nav navbar-nav navbar-right text-center">
+					 	<li role="about" ><a href="about.html" class="clearfix">ABOUT</a></li>
+					  	<li role="shop"><a href="shop.html">SHOP</a></li>
+					  	<li role="contact us"><a href="#">CONTACT</a></li>
+					</ul> 
+				</div> <!--navbar-collapse-->
 			</div> <!--container-fluid navBar-->
 		</nav> <!--navbar-default END-->
-
-
 
 
 		<div class="container-fluid storeSection"> <!--SHOP ITEMS START-->
@@ -112,7 +142,7 @@
 					<a href="#stomp" data-toggle="modal">
 					<img class="thumb" src="images/stomp.jpg" alt="Stomp Clap Woosh"/></a>
 					<h4>Stomp Clap Woosh <span class="label label-primary border-radius">New</span></h4>
-					<p>Get your head in the game on gameday.</p>
+					<p>Get your head in the game on Gameday.</p>
 				</section>
 			</div> <!--row-->
 
@@ -135,8 +165,6 @@
 		</div> <!--container-fluid storeSection-->
 
 
-
-
 		<footer>
 			<div class="footerContact">
 				<div class="container-fluid">
@@ -144,8 +172,8 @@
 					<div class="row">
 
 						<div class="col-md-12" id="social">
-								<a href="http://facebook.com"><img src="images/facebook.png" class="facebook"/></a>
-								<a href="http://instagram.com"><img src="images/instagram.png" class="instagram"/></a>
+								<a href="#"><img src="images/facebook.png" class="facebook"/></a>
+								<a href="https://instagram.com/explore/tags/100daysofcommutetherapy/"><img src="images/instagram.png" class="instagram"/></a>
 						<div> <!--social-->
 
 						<div class="col-md-12">
@@ -159,17 +187,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="footerLogo"><a href="index.html"><img src="images/ks_footer.jpg" class="center-block"/></a></div>
+						<div class="footerLogo"><a class="footerLogo" href="index.html"><img src="images/ks_footer.jpg" class="center-block"/></a></div>
 					</div>
 					<div class="col-sm-12" id="line"></div>
-					<div class="col-md-12"><p class="text-center">Copyright &copy 2015 www.knightswag.com</p></div> 
+					<div class="col-md-12"><p class="text-center">Copyright &copy 2015 <a class="portLink" href="index.html">www.jamasadesigns.com</a></p></div> 
 				</div> <!--row-->	
 			</div> <!--container-->	
 		</footer>
 	</div> <!--shopWrap-->
 
 
-		<!-- modal windows START -->
+		<!-- Modal 1 START -->
         <div id="numbers" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
 
@@ -183,7 +211,6 @@
                         <h5 class="text-center clearfix">&#36;19.99</h5>
                         <p class="text-center">That's right, we're still the largest school in Florida and now the Nation.</p>
                     </div>
-
 
 			        <div class="quantity"> <!--quantity box-->
 					   <div class="input-group">
@@ -199,11 +226,8 @@
 				                </button>
 				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
 				          	</span>
-						
 					    </div>
 					</div> <!--quantity box-->
-
-
 
                     <div class="modal-footer">
                         <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -211,10 +235,169 @@
                 </div>  <!--modal-content-->
             </div>  <!--modal-dialog-->
         </div> <!--numbers-->
+        <!-- Modal 1 END -->
+
+        <!-- Modal 2 START -->
+        <div id="freshest" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3>Freshest in the 407<span class="label label-primary border-radius"></span></h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/freshest.jpg" alt="Freshest Shirts" class="img-responsive pull-left">
+                        <h5 class="text-center clearfix">&#36;19.99</h5>
+                        <p class="text-center">Are you the &quot;freshest&quot; in Orlando? Who are we kidding, you're a Knight!</p>
+                    </div>
+
+			        <div class="quantity"> <!--quantity box-->
+					   <div class="input-group">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+				                	<span class="glyphicon glyphicon-minus"></span>
+				                </button>
+				            </span>
+				            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+				                  <span class="glyphicon glyphicon-plus"></span>
+				                </button>
+				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
+				          	</span>
+					    </div>
+					</div> <!--quantity box-->
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>  <!--modal-header-->
+                </div>  <!--modal-content-->
+            </div>  <!--modal-dialog-->
+        </div> <!--numbers-->
+        <!-- Modal 2 END -->
+
+        <!-- Modal 3 START -->
+        <div id="stomp" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3>Stomp Clap Woosh<span class="label label-primary border-radius"> New</span></h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/freshest.jpg" alt="Stomp Clap Woosh" class="img-responsive pull-left">
+                        <h5 class="text-center clearfix">&#36;19.99</h5>
+                        <p class="text-center">Get your head in the game on Gameday.</p>
+                    </div>
+
+			        <div class="quantity"> <!--quantity box-->
+					   <div class="input-group">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+				                	<span class="glyphicon glyphicon-minus"></span>
+				                </button>
+				            </span>
+				            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+				                  <span class="glyphicon glyphicon-plus"></span>
+				                </button>
+				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
+				          	</span>
+					    </div>
+					</div> <!--quantity box-->
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>  <!--modal-header-->
+                </div>  <!--modal-content-->
+            </div>  <!--modal-dialog-->
+        </div> <!--numbers-->
+        <!-- Modal 3 END -->
+
+        <!-- Modal 4 START -->
+        <div id="zombie" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3>I Heart Zombie Nation<span class="label label-primary border-radius"></span></h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/freshest.jpg" alt="UCF Zombie Nation" class="img-responsive pull-left">
+                        <h5 class="text-center clearfix">&#36;19.99</h5>
+                        <p class="text-center">Zombie Nation. Stand Up!</p>
+                    </div>
+
+			        <div class="quantity"> <!--quantity box-->
+					   <div class="input-group">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+				                	<span class="glyphicon glyphicon-minus"></span>
+				                </button>
+				            </span>
+				            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+				                  <span class="glyphicon glyphicon-plus"></span>
+				                </button>
+				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
+				          	</span>
+					    </div>
+					</div> <!--quantity box-->
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>  <!--modal-header-->
+                </div>  <!--modal-content-->
+            </div>  <!--modal-dialog-->
+        </div> <!--numbers-->
+        <!-- Modal 4 END -->
+
+        <!-- Modal 5 START -->
+        <div id="ksallday" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3>KNIGHTSWAG All Day<span class="label label-primary border-radius"></span></h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ksallday.jpg" alt="Stomp Clap Woosh" class="img-responsive pull-left">
+                        <h5 class="text-center clearfix">&#36;19.99</h5>
+                        <p class="text-center">Serving the Freshest shirts in the 407.</p>
+                    </div>
+
+			        <div class="quantity"> <!--quantity box-->
+					   <div class="input-group">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+				                	<span class="glyphicon glyphicon-minus"></span>
+				                </button>
+				            </span>
+				            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+				            <span class="input-group-btn">
+				                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+				                  <span class="glyphicon glyphicon-plus"></span>
+				                </button>
+				                <button class="btn btn-primary addtoCart" data-dismiss="modal" style="margin-left:20px;">Add to Cart</button>
+				          	</span>
+					    </div>
+					</div> <!--quantity box-->
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>  <!--modal-header-->
+                </div>  <!--modal-content-->
+            </div>  <!--modal-dialog-->
+        </div> <!--numbers-->
+        <!-- Modal 5 END -->
 
         
-
-        <!-- modal windows END -->
 
 
 
