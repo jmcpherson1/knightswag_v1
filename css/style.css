@@ -299,9 +299,16 @@ p#subhead {
 }
 
 .thumb{
-  max-width: 300px;
-  margin: 0 auto;
-  display: block;
+	max-width: 300px;
+	margin: 0 auto;
+	display: block;
+}
+
+.thumb:hover{
+	opacity:.7;
+  	-webkit-transition: opacity .25s ease;
+  	-moz-transition: opacity .25s ease;
+  	max-width: 300px
 }
 
 .shirtDesc section{
@@ -324,13 +331,6 @@ p#subhead {
 		padding-top:125px;
 	}
 }
-
-/*MODAL*/
-
-
-
-
-/*MODAL*/
 
 /*//////////STORE END////////////*/
 
