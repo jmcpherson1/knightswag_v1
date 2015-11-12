@@ -1,4 +1,4 @@
-.button{
+.resumeBtn {
 	font-weight: bold;
 	color:$color-white;
 	background-color:hidden;
@@ -9,12 +9,95 @@
 	border:solid 3px $color-white;
 	text-align:center;
 	padding-top:8px;
+	margin:0 auto; //horizontally center button
+	margin-top:20px;
 	// margin: 40px;
 	// clear:both;
 }
 
-.button:hover{
+.resumeBtn:hover{
 	text-decoration:none;
-	background-color:$color-white;
-	color:$color-darkgray;
+	border-color:$color-red;
+	// background-color:$color-white;
+	// color:$color-white;
+}
+
+/*a.btnBorder{
+	font-size:15pt;
+	// font-weight: bold;
+	color:$color-white;
+	background-color:hidden;
+	display:block;
+	text-transform:uppercase;
+	height:50px;
+	width: 300px;
+	border:solid 2px $color-white;
+	text-align:center;
+	padding-top:8px;
+	margin:0 auto; //horizontally center button
+	margin-top:50px;
+	// margin: 40px;
+	// clear:both;
+}
+
+a.btnBorder:hover{
+	text-decoration:none;
+	border-color:$color-gray-hover;
+	color:$color-gray-hover;
+}*/
+
+#loadMoreBtn {
+	font-weight: bold;
+	color:$color-red;
+	background-color:hidden;
+	display:block;
+	text-transform:uppercase;
+	height:40px;
+	width: 200px;
+	border:solid 3px $color-red;
+	text-align:center;
+	padding-top:8px;
+	margin:0 auto; //horizontally center button
+	margin-top:20px;
+	// margin: 40px;
+	// clear:both;
+}
+
+#loadMoreBtn:hover{
+	color:$color-white;
+	text-decoration:none;
+	cursor:pointer;
+	// background-color:$color-white;
+	// color:$color-white;
+}
+
+/* Desktop*/
+@media (min-width:769px) {
+
+}
+
+/* Mobile Devices*/
+@media only screen and (max-width:768px) {
+	.resumeBtn {
+		font-weight: bold;
+		color:$color-white;
+		background-color:$color-red;
+		display:block;
+		text-transform:uppercase;
+		height:40px;
+		width: 200px;
+		border:none;
+		text-align:center;
+		padding-top:8px;
+		margin:0 auto; //horizontally center button
+		top:450px;
+		clear:both;
+		position:relative;
+		z-index: 100;
+	}
+
+	.resumeBtn:hover{
+		text-decoration:none;
+		cursor:pointer;
+	}
 }

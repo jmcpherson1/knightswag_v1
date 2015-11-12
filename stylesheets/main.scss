@@ -1,18 +1,47 @@
 @import 'colors';
+@import 'animations';
 @import 'nav';
 @import 'buttons';
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding:0;
+}
+
+.clearfix{
+  clear:both;
+}
 
 body{
   font-family: Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; 
   text-rendering: optimizelegibility;
+  
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+}
+
+.noColumnPadding{
+  padding:0;
 }
 
 
 /*Box 1*/
 #box1{
-	background-image: url('../images/jp-jump.jpg');
+	background-image: url('../images/jp-jump-bw.jpg');
 	background-repeat: no-repeat;
 	background-color:black;
 	background-position: center center;
@@ -23,46 +52,43 @@ body{
 }
 
 #overlay1{  
-	background-image: url('../images/black.jpg');
+	background-image: url('../images/jp-jump.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
 	height:600px;
 	padding:0px;
 	opacity:0;
 	-webkit-transition: opacity .25s ease;
 	-moz-transition: opacity .25s ease;
-	padding-top:200px;
+	padding-top:175px;
 	text-align: center;
 }
 
-#box1:hover #overlay1{
-    opacity:.7;
-}
-
-#caption1{  
+#header1{  
     font-weight:900;
     color:$color-white;
-    font-size:96px;
+    font-size:60pt;
 }
 
-#box1:hover #caption1{
-    opacity:1;
-}
-
-#subcaption1{
-	font-size:35pt;
+#subheader1{
+	font-size:30pt;
 	color:$color-white;
 	font-weight:700;
 }
 
-#box1:hover #subcaption1{
-  opacity:1;
+#box1:hover #overlay1{
+    opacity:1;
 }
 
 /*Box 1 END*/
 
-
 /*Box 2*/
 #box2{
-  background-color:$color-red;
+  background-image: url('../images/100days-butts-bw.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
   background-position: center center;
   background-size:cover;
   height:300px;
@@ -71,19 +97,23 @@ body{
 }
 
 #overlay2{  
-	background-image: url('../images/black.jpg');
-	height:300px;
-	padding:0px;
-	opacity:0;
-	-webkit-transition: opacity .25s ease;
-	-moz-transition: opacity .25s ease;
-	padding-top:75px;
-	text-align: center;
-	overflow: hidden;
+  background-image: url('../images/100days-butts.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding:0px;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  padding-top:75px;
+  text-align: center;
+  overflow: hidden;
 }
 
-#box2:hover #overlay2{
-    opacity:.7;
+#box2:hover #overlay2 {
+    opacity:1;
     cursor: pointer;
 }
 
@@ -100,7 +130,7 @@ body{
 
 /*Box 3*/
 #box3{
-  background-image: url('../images/100days-butts.jpg');
+  background-image: url('../images/spikeapp-bw.jpg');
   background-repeat: no-repeat;
   background-color:black;
   background-position: center center;
@@ -111,19 +141,23 @@ body{
 }
 
 #overlay3{  
-	background-image: url('../images/black.jpg');
-	height:300px;
-	padding:0px;
-	opacity:0;
-	-webkit-transition: opacity .25s ease;
-	-moz-transition: opacity .25s ease;
-	padding-top:75px;
-	text-align: center;
-	overflow: hidden;
+  background-image: url('../images/spikeapp.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding:0px;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  padding-top:75px;
+  text-align: center;
+  overflow: hidden;
 }
 
-#box3:hover #overlay3{
-    opacity:.7;
+#box3:hover #overlay3 {
+    opacity:1;
     cursor: pointer;
 }
 
@@ -133,47 +167,53 @@ body{
     font-size:50px;
 }
 
-#box3:hover #caption2{
+#box3:hover #caption3{
     opacity:1;
 }
+
 /*Box 3 END*/
+
 
 /*Box 4*/
 #box4{
-	background-image: url('../images/spikeapp.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-size:cover;
-	background-position: center center;
-	height:300px;
-	padding-left: 0px;
-  	padding-right:0px;
+  background-image: url('../images/spikeapp-bw.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding-left: 0px;
+  padding-right:0px;
 }
 
 #overlay4{  
-	background-image: url('../images/black.jpg');
-	height:300px;
-	padding:0px;
-	opacity:0;
-	-webkit-transition: opacity .25s ease;
-	-moz-transition: opacity .25s ease;
-	padding-top:75px;
-	text-align: center;
-	overflow: hidden;
+  background-image: url('../images/spikeapp.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding:0px;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  padding-top:75px;
+  text-align: center;
+  overflow: hidden;
 }
 
-#box4:hover #overlay4{
-    opacity:.7;
+#box4:hover #overlay3 {
+    opacity:1;
     cursor: pointer;
 }
 
 #caption4{  
     font-weight:900;
     color:$color-white;
-    font-size: 50px;
+    font-size:50px;
 }
 
-#box4:hover #caption4{
+#box4:hover #caption3{
     opacity:1;
 }
 
@@ -181,30 +221,34 @@ body{
 
 /*Box 5*/
 #box5{
-	background-image: url('../images/spikeapp.jpg');
-	background-repeat: no-repeat;
-	background-color:black;
-	background-position: center center;
-	background-size:cover;
-	height:300px;
-	padding-left: 0px;
+  background-image: url('../images/tollbooth-bw.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding-left: 0px;
   padding-right:0px;
 }
 
 #overlay5{  
-	background-image: url('../images/black.jpg');
-	height:300px;
-	padding:0px;
-	opacity:0;
-	-webkit-transition: opacity .25s ease;
-	-moz-transition: opacity .25s ease;
-	padding-top:75px;
-	text-align: center;
-	overflow: hidden;
+  background-image: url('../images/tollbooth.jpg');
+  background-repeat: no-repeat;
+  background-color:black;
+  background-position: center center;
+  background-size:cover;
+  height:300px;
+  padding:0px;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  padding-top:75px;
+  text-align: center;
+  overflow: hidden;
 }
 
-#box5:hover #overlay5{
-    opacity:.7;
+#box5:hover #overlay5 {
+    opacity:1;
     cursor: pointer;
 }
 
@@ -214,13 +258,13 @@ body{
     font-size:50px;
 }
 
-#box5:hover #caption5{
+#box5:hover #caption3{
     opacity:1;
 }
 /*Box 5 END*/
 
 /*Box 6*/
-#box6{
+/*#box6{
 	background-image: url('../images/imconcept2.jpg');
 	background-repeat: no-repeat;
 	background-color:black;
@@ -238,7 +282,7 @@ body{
 	opacity:0;
 	-webkit-transition: opacity .25s ease;
 	-moz-transition: opacity .25s ease;
-	padding-top:75px; /*Text position in div*/
+	padding-top:75px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -256,26 +300,68 @@ body{
 
 #box6:hover #caption6{
     opacity:1;
-}
+}*/
 /*Box 6 END*/
 
 
 
-/*FOOTER*/
-.footer{
-  position:relative;
-  padding-top:50px;
-  background-color:$color-darkgray;
+/*Form Start*/
+.contact{
+  font-size:10pt;
+  background-color:$color-red;
+  height:300px;
+  padding:25px 70px;
   color:$color-white;
-  font-size:9pt;
+  text-decoration: none;
 }
 
-.footerLogo{
-  width:80px;
-  padding-bottom:10px;
+.logoContact{
+  width:50px;
+  position:relative;
+  margin:0 auto;
+  display:block;
 }
-/*FOOTER END*/
 
+label[for="name"], [for="email"], [for="message"] {
+  color:white;
+}
+
+.form-control{
+  border-radius:0px;
+}
+
+/* Portfolio */
+.portfolioWrap{
+  background-color:white;
+}
+
+
+/*100 Days*/
+.daysPage{
+  padding:50px 100px;
+  margin:0 auto;
+  min-height: 100%;
+  overflow:scroll;
+  background-color:rgb(235,235,235);
+}
+
+#instafeed{
+  position:relative;
+  width:100%;
+}
+
+.daysHeader{
+  font-size: 60px;
+  font-weight: 900;
+  background-color:rgb(235,235,235);
+  padding-left:100px;
+  position:relative;
+}
+
+#load-more{
+  position:relative;
+  margin:0 auto;
+}
 
 
 
@@ -289,93 +375,115 @@ body{
 /* Mobile Devices*/
 @media only screen and (max-width:768px) {
 
+
   #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6  {  
     display:none;
   }
 
-  #bgBox1{
-    height:600px;
-    background-color:rgba(0,0,0,.3);
-    position:relative;
-    z-index: 90;
-    top: 0px;
-
-    color:$color-white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top:250px;
+  p.main{
+    font-size:22pt;
     font-weight:900;
+    color:$color-red;
+    text-align:center;
+    position:relative;
+    top:210px;
+
   }
 
-  #bgBox2{
-    height:100px;
-    background-color:rgba(0,0,0,.7);
-    position:relative;
-    z-index: 90;
-    top: 200px;
+  // #bgBox1{
+  //   height:600px;
+  //   background-color:rgba(0,0,0,.3);
+  //   position:relative;
+  //   z-index: 90;
+  //   top: 0px;
+  //   color:$color-white;
+  //   text-align: center;
+  //   font-size: 20pt;
+  //   // padding-top:250px;
+  //   font-weight:900;
+  //   clear:both;
+  // }
 
+  .mobileTitle{
     color:$color-white;
     text-align: center;
     font-size: 20pt;
     padding-top:20px;
     font-weight:900;
+    position:relative;
+    top:100px;
+
+  }
+
+  #box2{
+    // height:100px;
+    // background-color:rgba(0,0,0,.7);
+    // position:relative;
+    // z-index: 90;
+    // top: 200px;
+
+    // color:$color-white;
+    // text-align: center;
+    // font-size: 20pt;
+    // padding-top:20px;
+    // font-weight:900;
+
+    background-image: url('../images/100days-butts.jpg');
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: center center;
+    background-size:cover;
+    height:300px;
+    padding-left: 0px;
+    padding-right:0px;
   }
   
-  #bgBox3{
-    height:100px;
-    background-color:rgba(0,0,0,.7);
-    position:relative;
-    z-index: 90;
-    top: 200px;
-
-    color:$color-white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top:20px;
-    font-weight:900;
+  #box3{
+    background-image: url('../images/spikeapp.jpg');
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: center center;
+    background-size:cover;
+    height:300px;
+    padding-left: 0px;
+    padding-right:0px;
   }
   
-  #bgBox4{
-    height:100px;
-    background-color:rgba(0,0,0,.7);
-    position:relative;
-    z-index: 90;
-    top: 200px;
-
-    color:$color-white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top:20px;
-    font-weight:900;
+  #box4{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: center center;
+    background-size:cover;
+    height:300px;
+    padding-left: 0px;
+    padding-right:0px;
   }
   
-  #bgBox5{
-    height:100px;
-    background-color:rgba(0,0,0,.7);
-    position:relative;
-    z-index: 90;
-    top: 200px;
-
-    color:$color-white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top:20px;
-    font-weight:900;
+  #box5{
+    background-image: url('../images/tollbooth.jpg');
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: center center;
+    background-size:cover;
+    height:300px;
+    padding-left: 0px;
+    padding-right:0px;
   }
   
-  #bgBox6{
-    height:100px;
-    background-color:rgba(0,0,0,.7);
-    position:relative;
-    z-index: 90;
-    top: 200px;
+  // #bgBox6{
+  //   height:100px;
+  //   background-color:rgba(0,0,0,.7);
+  //   position:relative;
+  //   z-index: 90;
+  //   top: 200px;
 
-    color:$color-white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top:20px;
-    font-weight:900;
-  }
+  //   color:$color-white;
+  //   text-align: center;
+  //   font-size: 20pt;
+  //   padding-top:20px;
+  //   font-weight:900;
+  // }
 
 
   #caption1{  
@@ -389,5 +497,11 @@ body{
     color:$color-white;
     font-weight:700;
   }
+
+  .daysHeader{
+    padding-top:10px;
+    font-size: 20pt;
+  }
+
 
 } /* Mobile Devices*/

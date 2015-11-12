@@ -1,14 +1,155 @@
-.navBar {
-  position: fixed;
-  height: 70px;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
-  margin: 0px;
-  background-color: #2c2c2c;
-  width: 100%; }
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s; }
 
-.button {
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ba0837;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white; }
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+/* Icon Shrink 
+.hvr-icon-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-shrink:before {
+  content: "\f119";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-shrink:hover:before, .hvr-icon-shrink:focus:before, .hvr-icon-shrink:active:before {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}*/
+/* Navigation Menu - Background */
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  z-index: 0;
+  list-style: none;
+  background-color: #2c2c2c; }
+
+nav ul li {
+  width: 200px; }
+nav a {
+  display: block;
+  padding: 1.1em;
+  color: white;
+  font-size: 1em;
+  transition: color 0.2s, background 0.5s;
+  padding: 10px 30px; }
+nav a:hover {
+  color: #ba0837;
+  text-decoration: none; }
+
+.logo {
+  width: 80px; }
+
+.copyright {
+  font-size: .9em;
+  color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 100px;
+  border-top: none;
+  border-bottom: none;
+  display: inline-block; }
+
+/* Nav Trigger */
+.navBtn {
+  /* hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+label[for="navBtn"] {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+  height: 35px;
+  width: 40px;
+  cursor: pointer;
+  background-image: url("../images/hamburger-red.svg"); }
+
+/* Make the Magic Happen */
+.navBtn + label, .site-wrap {
+  transition: left 0.2s; }
+
+.navBtn:checked + label {
+  left: 215px; }
+
+.navBtn:checked ~ .site-wrap {
+  left: 200px; }
+
+/* Micro reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.resumeBtn {
   font-weight: bold;
   color: white;
   background-color: hidden;
@@ -18,22 +159,112 @@
   width: 200px;
   border: solid 3px white;
   text-align: center;
-  padding-top: 8px; }
+  padding-top: 8px;
+  margin: 0 auto;
+  margin-top: 20px; }
 
-.button:hover {
+.resumeBtn:hover {
   text-decoration: none;
+  border-color: #ba0837; }
+
+/*a.btnBorder{
+	font-size:15pt;
+	// font-weight: bold;
+	color:$color-white;
+	background-color:hidden;
+	display:block;
+	text-transform:uppercase;
+	height:50px;
+	width: 300px;
+	border:solid 2px $color-white;
+	text-align:center;
+	padding-top:8px;
+	margin:0 auto; //horizontally center button
+	margin-top:50px;
+	// margin: 40px;
+	// clear:both;
+}
+
+a.btnBorder:hover{
+	text-decoration:none;
+	border-color:$color-gray-hover;
+	color:$color-gray-hover;
+}*/
+#loadMoreBtn {
+  font-weight: bold;
+  color: #ba0837;
+  background-color: hidden;
+  display: block;
+  text-transform: uppercase;
+  height: 40px;
+  width: 200px;
+  border: solid 3px #ba0837;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+#loadMoreBtn:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Desktop*/
+/* Mobile Devices*/
+@media only screen and (max-width: 768px) {
+  .resumeBtn {
+    font-weight: bold;
+    color: white;
+    background-color: #ba0837;
+    display: block;
+    text-transform: uppercase;
+    height: 40px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 auto;
+    top: 450px;
+    clear: both;
+    position: relative;
+    z-index: 100; }
+
+  .resumeBtn:hover {
+    text-decoration: none;
+    cursor: pointer; } }
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  min-height: 100%;
+  min-width: 100%;
   background-color: white;
-  color: #2c2c2c; }
+  /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 0; }
+
+.clearfix {
+  clear: both; }
 
 body {
   font-family: Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none; }
+
+.noColumnPadding {
+  padding: 0; }
 
 /*Box 1*/
 #box1 {
-  background-image: url("../images/jp-jump.jpg");
+  background-image: url("../images/jp-jump-bw.jpg");
   background-repeat: no-repeat;
   background-color: black;
   background-position: center center;
@@ -43,38 +274,38 @@ body {
   padding-right: 0px; }
 
 #overlay1 {
-  background-image: url("../images/black.jpg");
+  background-image: url("../images/jp-jump.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
   height: 600px;
   padding: 0px;
   opacity: 0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
-  padding-top: 200px;
+  padding-top: 175px;
   text-align: center; }
 
-#box1:hover #overlay1 {
-  opacity: .7; }
-
-#caption1 {
+#header1 {
   font-weight: 900;
   color: white;
-  font-size: 96px; }
+  font-size: 60pt; }
 
-#box1:hover #caption1 {
-  opacity: 1; }
-
-#subcaption1 {
-  font-size: 35pt;
+#subheader1 {
+  font-size: 30pt;
   color: white;
   font-weight: 700; }
 
-#box1:hover #subcaption1 {
+#box1:hover #overlay1 {
   opacity: 1; }
 
 /*Box 1 END*/
 /*Box 2*/
 #box2 {
-  background-color: #ba0837;
+  background-image: url("../images/100days-butts-bw.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
   background-position: center center;
   background-size: cover;
   height: 300px;
@@ -82,7 +313,11 @@ body {
   padding-right: 0px; }
 
 #overlay2 {
-  background-image: url("../images/black.jpg");
+  background-image: url("../images/100days-butts.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
   height: 300px;
   padding: 0px;
   opacity: 0;
@@ -93,7 +328,7 @@ body {
   overflow: hidden; }
 
 #box2:hover #overlay2 {
-  opacity: .7;
+  opacity: 1;
   cursor: pointer; }
 
 #caption2 {
@@ -107,7 +342,7 @@ body {
 /*Box 2 END*/
 /*Box 3*/
 #box3 {
-  background-image: url("../images/100days-butts.jpg");
+  background-image: url("../images/spikeapp-bw.jpg");
   background-repeat: no-repeat;
   background-color: black;
   background-position: center center;
@@ -117,7 +352,11 @@ body {
   padding-right: 0px; }
 
 #overlay3 {
-  background-image: url("../images/black.jpg");
+  background-image: url("../images/spikeapp.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
   height: 300px;
   padding: 0px;
   opacity: 0;
@@ -128,7 +367,7 @@ body {
   overflow: hidden; }
 
 #box3:hover #overlay3 {
-  opacity: .7;
+  opacity: 1;
   cursor: pointer; }
 
 #caption3 {
@@ -136,23 +375,27 @@ body {
   color: white;
   font-size: 50px; }
 
-#box3:hover #caption2 {
+#box3:hover #caption3 {
   opacity: 1; }
 
 /*Box 3 END*/
 /*Box 4*/
 #box4 {
-  background-image: url("../images/spikeapp.jpg");
+  background-image: url("../images/spikeapp-bw.jpg");
   background-repeat: no-repeat;
   background-color: black;
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
   height: 300px;
   padding-left: 0px;
   padding-right: 0px; }
 
 #overlay4 {
-  background-image: url("../images/black.jpg");
+  background-image: url("../images/spikeapp.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
   height: 300px;
   padding: 0px;
   opacity: 0;
@@ -162,8 +405,8 @@ body {
   text-align: center;
   overflow: hidden; }
 
-#box4:hover #overlay4 {
-  opacity: .7;
+#box4:hover #overlay3 {
+  opacity: 1;
   cursor: pointer; }
 
 #caption4 {
@@ -171,13 +414,13 @@ body {
   color: white;
   font-size: 50px; }
 
-#box4:hover #caption4 {
+#box4:hover #caption3 {
   opacity: 1; }
 
 /*Box 4 END*/
 /*Box 5*/
 #box5 {
-  background-image: url("../images/spikeapp.jpg");
+  background-image: url("../images/tollbooth-bw.jpg");
   background-repeat: no-repeat;
   background-color: black;
   background-position: center center;
@@ -187,7 +430,11 @@ body {
   padding-right: 0px; }
 
 #overlay5 {
-  background-image: url("../images/black.jpg");
+  background-image: url("../images/tollbooth.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
   height: 300px;
   padding: 0px;
   opacity: 0;
@@ -198,7 +445,7 @@ body {
   overflow: hidden; }
 
 #box5:hover #overlay5 {
-  opacity: .7;
+  opacity: 1;
   cursor: pointer; }
 
 #caption5 {
@@ -206,59 +453,97 @@ body {
   color: white;
   font-size: 50px; }
 
-#box5:hover #caption5 {
+#box5:hover #caption3 {
   opacity: 1; }
 
 /*Box 5 END*/
 /*Box 6*/
-#box6 {
-  background-image: url("../images/imconcept2.jpg");
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: center center;
-  background-size: cover;
-  height: 300px;
-  padding-left: 0px;
-  padding-right: 0px; }
+/*#box6{
+	background-image: url('../images/imconcept2.jpg');
+	background-repeat: no-repeat;
+	background-color:black;
+	background-position: center center;
+	background-size:cover;
+	height:300px;
+	padding-left: 0px;
+  padding-right:0px;
+}
 
-#overlay6 {
-  background-image: url("../images/black.jpg");
-  height: 300px;
-  padding: 0px;
-  opacity: 0;
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
-  padding-top: 75px;
-  /*Text position in div*/
-  text-align: center;
-  overflow: hidden; }
+#overlay6{  
+	background-image: url('../images/black.jpg');
+	height:300px;
+	padding:0px;
+	opacity:0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	padding-top:75px;
+	text-align: center;
+	overflow: hidden;
+}
 
-#box6:hover #overlay6 {
-  opacity: .7;
-  cursor: pointer; }
+#box6:hover #overlay6{
+  opacity:.7;
+  cursor: pointer;
+}
 
-#caption6 {
-  font-weight: 900;
-  color: white;
-  font-size: 50px; }
+#caption6{  
+  font-weight:900;
+  color:$color-white;
+  font-size:50px;
+}
 
-#box6:hover #caption6 {
-  opacity: 1; }
-
+#box6:hover #caption6{
+    opacity:1;
+}*/
 /*Box 6 END*/
-/*FOOTER*/
-.footer {
-  position: relative;
-  padding-top: 50px;
-  background-color: #2c2c2c;
+/*Form Start*/
+.contact {
+  font-size: 10pt;
+  background-color: #ba0837;
+  height: 300px;
+  padding: 25px 70px;
   color: white;
-  font-size: 9pt; }
+  text-decoration: none; }
 
-.footerLogo {
-  width: 80px;
-  padding-bottom: 10px; }
+.logoContact {
+  width: 50px;
+  position: relative;
+  margin: 0 auto;
+  display: block; }
 
-/*FOOTER END*/
+label[for="name"], [for="email"], [for="message"] {
+  color: white; }
+
+.form-control {
+  border-radius: 0px; }
+
+/* Portfolio */
+.portfolioWrap {
+  background-color: white; }
+
+/*100 Days*/
+.daysPage {
+  padding: 50px 100px;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: scroll;
+  background-color: #ebebeb; }
+
+#instafeed {
+  position: relative;
+  width: 100%; }
+
+.daysHeader {
+  font-size: 60px;
+  font-weight: 900;
+  background-color: #ebebeb;
+  padding-left: 100px;
+  position: relative; }
+
+#load-more {
+  position: relative;
+  margin: 0 auto; }
+
 /* Desktop*/
 @media (min-width: 769px) {
   #bgBox4, #bgBox5, #bgBox6 {
@@ -269,77 +554,62 @@ body {
   #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6 {
     display: none; }
 
-  #bgBox1 {
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 90;
-    top: 0px;
-    color: white;
+  p.main {
+    font-size: 22pt;
+    font-weight: 900;
+    color: #ba0837;
     text-align: center;
-    font-size: 20pt;
-    padding-top: 250px;
-    font-weight: 900; }
-
-  #bgBox2 {
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    z-index: 90;
-    top: 200px;
+    top: 210px; }
+
+  .mobileTitle {
     color: white;
     text-align: center;
     font-size: 20pt;
     padding-top: 20px;
-    font-weight: 900; }
-
-  #bgBox3 {
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 900;
     position: relative;
-    z-index: 90;
-    top: 200px;
-    color: white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top: 20px;
-    font-weight: 900; }
+    top: 100px; }
 
-  #bgBox4 {
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    z-index: 90;
-    top: 200px;
-    color: white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top: 20px;
-    font-weight: 900; }
+  #box2 {
+    background-image: url("../images/100days-butts.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px; }
 
-  #bgBox5 {
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    z-index: 90;
-    top: 200px;
-    color: white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top: 20px;
-    font-weight: 900; }
+  #box3 {
+    background-image: url("../images/spikeapp.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px; }
 
-  #bgBox6 {
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    z-index: 90;
-    top: 200px;
-    color: white;
-    text-align: center;
-    font-size: 20pt;
-    padding-top: 20px;
-    font-weight: 900; }
+  #box4 {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  #box5 {
+    background-image: url("../images/tollbooth.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px; }
 
   #caption1 {
     font-weight: 900;
@@ -349,7 +619,11 @@ body {
   #subcaption1 {
     font-size: 35pt;
     color: white;
-    font-weight: 700; } }
+    font-weight: 700; }
+
+  .daysHeader {
+    padding-top: 10px;
+    font-size: 20pt; } }
 /* Mobile Devices*/
 
 /*# sourceMappingURL=main.css.map */

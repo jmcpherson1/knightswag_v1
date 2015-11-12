@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap">
+	<!-- <link href="css/hover-min.css" rel="stylesheet" media="all"> -->
+
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,94 +34,111 @@
 	<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<!--favicons-->
-
 	
 </head>
 
+
 <body>
-	<div class="container-fluid wrap">
+	
+	<nav>
+		<ul class="navigation">
+		<!--logo inserted in "li" -->
+		    <li class="logoInNav"><a href="index.html"><img class="logo" src="images/jm-logo-white.svg" /></li>
+		    <li><a href="100days.html">100 Days</a></li>
+		    <li><a href="#">Design</a></li>
+		    <li><a href="#">Print</a></li>
+		    <li><a href="#">3D</a></li>
+		    <li><a href="#">Contact Me!</a></li>
+		    <li><p class="copyright">Copyright &copy 2015 Jamasa McPherson</p></li>
+		</ul>
+	</nav>
+		<!--nav button trigger-->
+		<input type="checkbox" id="navBtn" class="navBtn" />
+		<label for="navBtn"></label>
+		<!--nav button trigger-->
+	
+
+
+	
+<!-- body content start -->
+	<div class="container-fluid site-wrap">
 
 		<div class="row">
-
-			<div class="navBar">
-			
-				<!-- <a href="https://dribbble.com/theecreativedir"><img class="dribbble" src="images/dribbble.png"/></a>
-				<a href="https://www.linkedin.com/in/jamasa"><img class="linkedin" src="images/linkedin.png"/></a> -->
-
-				<a class="button" href="images/mcpherson_resume_0721.pdf" target="_blank">DOWNLOAD RESUME</a>
-
-
-			</div> <!--navBar-->
-
-
-
 			<div class="col-md-8" id="box1">
 			  	<div id="overlay1">
-			    	<span id="caption1">Hi, I'm Jamasa.</span><br>
-			    	<span id="subcaption1">&lt; Art Director. Designer. Occasional Coder. / &gt;</span>
+			    	<span id="header1">Hi, I'm Jamasa.</span><br>
+			    	<span id="subheader1">&lt; Art Director. Designer. Occasional Coder /&gt;</span>
+
+			    	<div class="button"><a class="resumeBtn hvr-sweep-to-right " href="images/mcpherson_resume_0721.pdf" target="_blank">DOWNLOAD RESUME</a></div>
 			  	</div> <!--overlay1-->
 
-			  	<div id="bgBox1">Hi, I'm Jamasa.<br>
-			    	&lt; Art Director. Designer. Occasional Coder / &gt;
-			  	</div> <!--bgBox1-->
-			</div> 
-			<!--///// box1 main /////-->
+			  	<!-- <div class="button"> -->
+			  	<a class="resumeBtn hvr-sweep-to-right" href="images/mcpherson_resume_0721.pdf" target="_blank">DOWNLOAD RESUME</a>
+			  	<!-- </div> -->
 
+			  	<p class="main">Hi, I'm Jamasa.<br>&lt; Art Director. Designer. Occasional Coder /&gt;</p>
 
+			</div> <!--///// end box1 main /////-->
 
 			<div class="col-md-4" id="box2">
-			  	<div id="overlay2"><span id="caption4">About</span></div>
-			  	<div id="bgBox2">About</div>
+				<a href="100days.html" target="_blank" id="clear-atag">
+			  		<div id="overlay2"><span id="caption2">The 100 Day Project</span></div>
+			  		<div class="mobileTitle">The 100 Day Project</div>
+			  	</a>
+				<!-- <div id="overlay2"><a class="btnBorder" href="https://instagram.com/explore/tags/100daysofcommutetherapy/" target="_blank">THE 100 DAY PROJECT</a></div> -->
 			</div> <!--box2-->
 
 			<div class="col-md-4" id="box3">
-				<a href="https://instagram.com/explore/tags/100daysofcommutetherapy/" id="clear-atag">
-			  		<div id="overlay3"><span id="caption4">The 100 Day Project</span></div>
-			  	<div id="bgBox3">The 100 Day Project</div></a>
+				<a href="#">
+			  		<div id="overlay3"><span id="caption3">Design</span></div>
+			  		<div class="mobileTitle">Design</div>
+			  	</a>
 			</div> <!--box3-->
-		</div> <!--row main-->
 
+			
+		</div> <!--row 1 main end-->
 
 
 		<div class="row">
 			<div class="col-md-4" id="box4">
-			  	<a href="#">
-			  		<div id="overlay4"><span id="caption4">Design</span></div>
-			  	<div id="bgBox4">Design</div></a>
+				<a href="#">
+			  		<div id="overlay4"><span id="caption4">Print</span></div>
+			  		<div class="mobileTitle">Print</div>
+			  	</a>
 			</div> <!--box4-->
 
 			<div class="col-md-4" id="box5">
-				<div id="overlay5">
-					<span id="caption5">Print</span>
-				</div>
-
-				<div id="bgBox5">Print</div>
+				<a href="#">
+			  		<div id="overlay5"><span id="caption5">3D</span></div>
+			  		<div class="mobileTitle">3D</div>
+			  	</a>
 			</div> <!--box5-->
 
-			<div class="col-md-4" id="box6">
-				<div id="overlay6">
-					<span id="caption6">3D</span>
-				</div>
-				<div id="bgBox6">3D</div>
+			<div class="col-md-4 contact" id="">
+				<a href="index.html"><img class="logoContact" src="images/jm-logo-white.svg" />
+
+				<form class="">
+					<div class="form-group">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+					    <label for="email">Email</label>
+					    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="">
+					
+					<label for="message">Message</label>
+					<textarea class="form-control" rows="3"></textarea>
+					</div>
+				</form>
 			</div> <!--box6-->
-		</div> <!--row main-->
+
+		</div> <!--row 2 main end-->
 
 
-		<!-- footer -->
-		<div class="row footer text-center">
-			<div class="col-md-12">
-				<a href="index.html"><img class="footerLogo" src="images/jm-logo.png" /></a>
-			</div>
-			<p class="">Copyright &copy 2015 Jamasa McPherson</p>
-		</div> 
-		<!--row footer-->	
-
-	</div> <!--container-fluid wrap-->
+	</div> <!--container-fluid site-wrap-->
 
 	<!--Javascript-->
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 
